@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "multi-agente"
+version = "0.1.0"
+description = ""
+authors = ["Mauricio Gómez Rivera <mauricio.gomez@serviunix.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+langgraph = "^0.2.60"
+langchain-openai = "^0.2.14"
+langgraph-cli = {extras = ["inmem"], version = "^0.1.65"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
